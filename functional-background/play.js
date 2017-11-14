@@ -29,8 +29,8 @@ fn.times(10, (number) => {
     )
 });
 
-console.log(fn.every([1,2,3,4,5,6], (number) => {return number > 6}));
-console.log(fn.some([1,2,3,4,5,6,7], (number) => {return number > 6}));
+console.log(fn.every([1,2,3,4,5,6], (number) => number > 6));
+console.log(fn.some([1,2,3,4,5,6,7], (number) => number > 6));
 
 let memoizedFactorial = fn.memoized((n) => {
     if (n === 0) {
